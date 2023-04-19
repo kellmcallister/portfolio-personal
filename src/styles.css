@@ -36,3 +36,7 @@ p {
   color: var(--font-color);
   font-family: var(--body-font);
 }
+.icon {
+  padding: 10px;
+  color: var(--accent-brown-color);
+}
