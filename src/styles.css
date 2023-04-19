@@ -1,0 +1,38 @@
+:root {
+  --background-color: #1e212d;
+  --accent-peach-color: #eabf9f;
+  --accent-brown-color: #b68973;
+  --accent-gold-color: #fdc57b;
+  --font-color: #faf3e0;
+  --heading-font: "Prata", serif;
+  --body-font: "Raleway", sans-serif;
+}
+
+body {
+  display: block;
+  margin: 0 auto;
+  max-width: 900px;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+}
+h1,
+h2 {
+  color: var(--accent-brown-color);
+  font-weight: bold;
+}
+h3,
+h4 {
+  color: var(--accent-peach-color);
+}
+p {
+  color: var(--font-color);
+  font-family: var(--body-font);
+}
