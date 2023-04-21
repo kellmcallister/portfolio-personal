@@ -1,51 +1,71 @@
 :root {
-  --background-color: #1e212d;
+  --background-light-color: #f8ede3;
+  --background-dark-color: #1e212d;
   --accent-peach-color: #eabf9f;
   --accent-brown-color: #b68973;
   --accent-gold-color: #fdc57b;
-  --font-color: #faf3e0;
+  --accent-plum-color: #987788;
+  --accent-mint-color: #6d9886;
+  --font-dark-color: #1e212d;
+  --font-light-color: #faf3e0;
   --heading-font: "Prata", serif;
   --body-font: "Raleway", sans-serif;
-  --text-shadow: 0px 0px 5px rgba(30, 33, 45, 1),
-    0px 0px 10px rgba(30, 33, 45, 1), 0px 0px 15px rgba(30, 33, 45, 1);
+  --text-shadow: 0px 0px 10px rgba(30, 33, 45, 1),
+    0px 0px 15px rgba(30, 33, 45, 1), 0px 0px 20px rgba(30, 33, 45, 1);
 }
-
-body {
+body.index-bg {
+  background-position-y: 50px;
   background-image: url("/photos/pisa-archway-view-transparent.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: var(--background-dark-color);
   display: block;
   margin: 0 auto;
-  background-color: var(--background-color);
-  color: var(--font-color);
+  color: var(--font-light-color);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
-h1,
-h2,
-h3,
-h4 {
+
+h1 {
   font-family: var(--heading-font);
   text-shadow: var(--text-shadow);
-}
-h1,
-h2 {
   color: var(--accent-brown-color);
   font-weight: bold;
 }
-h3,
+h2 {
+  font-family: var(--heading-font);
+  text-shadow: var(--text-shadow);
+  color: var(--accent-brown-color);
+  font-weight: bold;
+}
+h3 {
+  margin: 20px auto;
+  font-family: var(--heading-font);
+  text-shadow: var(--text-shadow);
+  color: var(--accent-peach-color);
+}
 h4 {
+  font-family: var(--heading-font);
+  text-shadow: var(--text-shadow);
   color: var(--accent-peach-color);
 }
 p {
-  color: var(--font-color);
+  color: var(--font-light-color);
   font-family: var(--body-font);
+  margin-top: 50px;
+}
+p.index-about {
+  max-width: 500px;
+  line-height: 1.5;
+  display: block;
+  margin: 20px auto;
 }
 footer {
   margin-bottom: 50px;
 }
 .navbar {
   background-color: #ae9a8c;
+  font-family: var(--heading-font);
 }
 .container {
   max-width: 800px;
@@ -53,18 +73,46 @@ footer {
 .index-header {
   margin-top: 250px;
 }
-.index-about {
-  margin-top: 50px;
+.grid {
+  display: block;
+  margin: 50px auto;
+  width: 700px;
+  border: 2px solid var(--accent-peach-color);
+  border-radius: 250px;
+}
+.grid-box {
+  height: 250px;
+}
+.grid-link {
+  font-size: 28px;
+  font-family: var(--heading-font);
+  text-decoration: none;
+  color: blue;
+  border: 1px solid green;
+  padding: 10px;
+  margin: 15px auto;
+}
+.border-about {
+  border-bottom: 1px solid var(--accent-peach-color);
+  border-right: 1px solid var(--accent-peach-color);
+}
+.border-construction {
+  border-bottom: 1px solid var(--accent-peach-color);
+  border-left: 1px solid var(--accent-peach-color);
+}
+.border-coding {
+  border-top: 1px solid var(--accent-peach-color);
+  border-right: 1px solid var(--accent-peach-color);
+}
+.border-personal {
+  border-top: 1px solid var(--accent-peach-color);
+  border-left: 1px solid var(--accent-peach-color);
 }
 .icon {
   padding: 10px;
+  margin: 30px auto;
   color: var(--accent-brown-color);
 }
-.pisa-archway {
-  display: block;
-  margin: 0 0 20px;
-}
-
 @media (max-width: 400) {
   .index-header {
     margin-top: 50px;

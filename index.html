@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="This is the personal porfolio website of Kelly McAllister. Come check out travel photos, book recommendations and cocktail recipes all wrapped up in wit and whiskey."
+      content="This is the personal porfolio website of front-end developer Kelly McAllister. Come check out my journey from construction to coding, with some personal projects sprinkled in between."
     />
     <title>Kelly McAllister's Personal Portfolio | kellmcallister.com</title>
     <link
@@ -32,9 +32,9 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="index-bg">
     <div>
-      <nav class="navbar navbar-expand-xl">
+      <nav class="navbar navbar-expand-xl fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">KMAC</a>
           <button
@@ -54,13 +54,16 @@
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="/construction.html">Construction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/coding.html">Coding</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="/travel.html">Travel</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/books.html">Books</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/cocktails.html">Cocktails</a>
               </li>
             </ul>
           </div>
@@ -68,37 +71,37 @@
       </nav>
     </div>
     <div class="container">
-      <h1 class="index-header">Kelly McAllister</h1>
-      <h2 class="index-subheader">Personal Portfolio</h2>
+      <h1 class="index-header">Hi, I'm Kelly McAllister</h1>
+      <h2 class="index-subheader">Welcome to my Portfolio</h2>
       <h3 class="index-tagline">
-        Travel photos, book recommendations, cocktail recipes
+        From construction to coding, and everywhere in between.
       </h3>
-      <h4 class="index-subtagline">Wit included, whiskey charges extra</h4>
       <p class="index-about">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
-        aliquid blanditiis, harum temporibus eos incidunt pariatur, perferendis
-        nihil rem animi autem. Consectetur quaerat explicabo doloribus omnis?
-        Culpa perferendis odit provident laborum aliquid praesentium molestias
-        eaque sunt officiis! Aspernatur recusandae quas ducimus nulla explicabo
-        laudantium fuga accusantium debitis exercitationem ipsa rem aut
-        architecto animi ipsam, inventore neque accusamus officiis possimus esse
-        earum aliquid? Ad velit sed temporibus suscipit minima fuga excepturi
-        praesentium architecto ipsam, maxime sit ipsum nam deleniti
-        reprehenderit enim dolorum quibusdam ullam id quasi odio dolore
-        dignissimos sunt autem harum! Libero impedit doloremque aspernatur ab
-        id, vitae totam illum? Laborum, deserunt provident soluta ducimus
-        sapiente labore! Assumenda velit magnam debitis, aliquid optio vero
-        necessitatibus ducimus eveniet aperiam ab non libero sit esse cupiditate
-        facere suscipit illo repudiandae quis repellendus? Vel aut nulla non
-        quia error aliquam praesentium iste. Illo sequi debitis provident culpa
-        voluptas necessitatibus vero sint sapiente maxime. Vitae sapiente animi,
-        repellat iste porro laborum voluptatibus itaque est molestiae
-        dignissimos! Ipsam hic fuga iure voluptatum eos velit sapiente mollitia
-        autem minima!
+        I'm an aspiring front-end developer and recovering construction project
+        manager looking to weld the two worlds together.
       </p>
     </div>
+    <div class="container-fluid grid">
+      <div class="row">
+        <div class="col grid-box border-about">
+          <a href="/" class="grid-link" title="About Me link">About Me</a>
+        </div>
+        <div class="col grid-box border-construction">
+          <a href="/" class="grid-link" title="Construction link"
+            >Construction</a
+          >
+        </div>
+        <div class="w-100"></div>
+        <div class="col grid-box border-coding">
+          <a href="/" class="grid-link" title="Coding link">Coding</a>
+        </div>
+        <div class="col grid-box border-personal">
+          <a href="/" class="grid-link" title="Personal link">Personal</a>
+        </div>
+      </div>
+    </div>
     <footer>
-      <div class="sm-icons">
+      <div class="social-icons">
         <a
           href="https://www.linkedin.com/in/kellymcallister/"
           target="_blank"
