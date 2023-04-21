@@ -6,12 +6,16 @@
   --font-color: #faf3e0;
   --heading-font: "Prata", serif;
   --body-font: "Raleway", sans-serif;
+  --text-shadow: 0px 0px 5px rgba(30, 33, 45, 1),
+    0px 0px 10px rgba(30, 33, 45, 1), 0px 0px 15px rgba(30, 33, 45, 1);
 }
 
 body {
+  background-image: url("/photos/pisa-archway-view-transparent.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: block;
   margin: 0 auto;
-  max-width: 900px;
   background-color: var(--background-color);
   color: var(--font-color);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -22,6 +26,7 @@ h2,
 h3,
 h4 {
   font-family: var(--heading-font);
+  text-shadow: var(--text-shadow);
 }
 h1,
 h2 {
@@ -36,7 +41,32 @@ p {
   color: var(--font-color);
   font-family: var(--body-font);
 }
+footer {
+  margin-bottom: 50px;
+}
+.container {
+  max-width: 800px;
+}
+.index-header {
+  margin-top: 250px;
+}
+.index-about {
+  margin-top: 50px;
+}
 .icon {
   padding: 10px;
   color: var(--accent-brown-color);
+}
+.pisa-archway {
+  display: block;
+  margin: 0 0 20px;
+}
+
+@media (max-width: 400) {
+  .index-header {
+    margin-top: 50px;
+  }
+  .index-about {
+    margin-top: none;
+  }
 }
