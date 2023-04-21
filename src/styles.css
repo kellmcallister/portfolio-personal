@@ -44,6 +44,9 @@ p {
 footer {
   margin-bottom: 50px;
 }
+.navbar {
+  background-color: #ae9a8c;
+}
 .container {
   max-width: 800px;
 }
