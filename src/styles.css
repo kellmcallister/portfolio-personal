@@ -25,6 +25,15 @@ body.index-bg {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
+body.coding-bg,
+body.construction-bg,
+body.about-bg {
+  background-color: var(--background-light-color);
+  display: block;
+  margin: 0 auto;
+  color: var(--font-dark-color);
+  text-align: center;
+}
 
 h1 {
   font-family: var(--heading-font);
@@ -32,11 +41,20 @@ h1 {
   color: var(--accent-brown-color);
   font-weight: bold;
 }
+h1.coding-header {
+  margin: 100px auto 40px;
+  color: var(--accent-plum-color);
+  text-shadow: none;
+}
 h2 {
   font-family: var(--heading-font);
   text-shadow: var(--text-shadow);
   color: var(--accent-brown-color);
   font-weight: bold;
+}
+h2.workshop-title {
+  color: var(--accent-plum-color);
+  text-shadow: none;
 }
 h3 {
   margin: 20px auto;
@@ -45,12 +63,11 @@ h3 {
   color: var(--accent-peach-color);
 }
 h4 {
-  font-family: var(--heading-font);
-  text-shadow: var(--text-shadow);
-  color: var(--accent-peach-color);
+  font-family: var(--body-font);
+  color: var(--font-dark-color);
+  font-size: 24px;
 }
 p {
-  color: var(--font-light-color);
   font-family: var(--body-font);
   margin-top: 50px;
 }
@@ -59,6 +76,17 @@ p.index-about {
   line-height: 1.5;
   display: block;
   margin: 20px auto;
+  color: var(--font-light-color);
+}
+p.coding-summary {
+  max-width: 800px;
+  line-height: 1.5;
+  display: block;
+  margin: 70px auto;
+  color: var(--font-dark-color);
+}
+a.shecodes-link {
+  color: var(--font-dark-color);
 }
 footer {
   margin-bottom: 50px;
@@ -76,10 +104,12 @@ footer {
 .grid {
   border: 2px solid var(--accent-brown-color);
   border-radius: 100px;
+  max-width: 600px;
+  margin: 40px auto;
 }
 .grid-box {
   display: block;
-  margin: 20px auto;
+  margin: 40px 0;
 }
 .grid-link {
   font-size: 28px;
@@ -88,11 +118,24 @@ footer {
   color: var(--font-light-color);
   margin: 15px auto;
 }
-
-.icon {
+.grid-link:hover {
+  color: var(--accent-peach-color);
+  font-size: 30px;
+  text-decoration: underline;
+  transition: all 200ms ease-in-out;
+}
+.workshop-box {
+  border: 1px solid var(--accent-plum-color);
+}
+.icon-index {
   padding: 10px;
   margin: 30px auto;
   color: var(--accent-brown-color);
+}
+.icon-coding {
+  padding: 10px;
+  margin: 30px auto;
+  color: var(--accent-plum-color);
 }
 @media (max-width: 400) {
   .index-header {
