@@ -74,40 +74,21 @@ footer {
   margin-top: 250px;
 }
 .grid {
-  display: block;
-  margin: 50px auto;
-  width: 700px;
-  border: 2px solid var(--accent-peach-color);
-  border-radius: 250px;
+  border: 2px solid var(--accent-brown-color);
+  border-radius: 100px;
 }
 .grid-box {
-  height: 250px;
+  display: block;
+  margin: 20px auto;
 }
 .grid-link {
   font-size: 28px;
   font-family: var(--heading-font);
   text-decoration: none;
-  color: blue;
-  border: 1px solid green;
-  padding: 10px;
+  color: var(--font-light-color);
   margin: 15px auto;
 }
-.border-about {
-  border-bottom: 1px solid var(--accent-peach-color);
-  border-right: 1px solid var(--accent-peach-color);
-}
-.border-construction {
-  border-bottom: 1px solid var(--accent-peach-color);
-  border-left: 1px solid var(--accent-peach-color);
-}
-.border-coding {
-  border-top: 1px solid var(--accent-peach-color);
-  border-right: 1px solid var(--accent-peach-color);
-}
-.border-personal {
-  border-top: 1px solid var(--accent-peach-color);
-  border-left: 1px solid var(--accent-peach-color);
-}
+
 .icon {
   padding: 10px;
   margin: 30px auto;
