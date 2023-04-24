@@ -55,6 +55,7 @@ h2 {
 h2.workshop-title {
   color: var(--accent-plum-color);
   text-shadow: none;
+  text-decoration: underline;
 }
 h3 {
   margin: 20px auto;
@@ -88,6 +89,16 @@ p.coding-summary {
 a.shecodes-link {
   color: var(--font-dark-color);
 }
+img.coding-project-image {
+  border-radius: 15px;
+  height: 200px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  vertical-align: middle;
+}
+img.coding-project-image:hover {
+  cursor: pointer;
+}
 footer {
   margin-bottom: 50px;
 }
@@ -97,6 +108,11 @@ footer {
 }
 .container {
   max-width: 800px;
+}
+.container-coding {
+  max-width: 1100px;
+  display: block;
+  margin: 0 auto;
 }
 .index-header {
   margin-top: 250px;
@@ -123,9 +139,6 @@ footer {
   font-size: 30px;
   text-decoration: underline;
   transition: all 200ms ease-in-out;
-}
-.workshop-box {
-  border: 1px solid var(--accent-plum-color);
 }
 .icon-index {
   padding: 10px;
