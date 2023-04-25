@@ -38,7 +38,7 @@ body.about-bg {
 h1 {
   font-family: var(--heading-font);
   text-shadow: var(--text-shadow);
-  color: var(--accent-brown-color);
+  color: var(--accent-peach-color);
   font-weight: bold;
 }
 h1.coding-header,
@@ -51,7 +51,7 @@ h1.construction-header {
 h2 {
   font-family: var(--heading-font);
   text-shadow: var(--text-shadow);
-  color: var(--accent-brown-color);
+  color: var(--accent-peach-color);
   font-weight: bold;
 }
 h2.workshop-title {
@@ -68,7 +68,7 @@ h3 {
 h4 {
   font-family: var(--body-font);
   color: var(--font-dark-color);
-  font-size: 22px;
+  font-size: 18px;
 }
 p {
   font-family: var(--body-font);
@@ -88,12 +88,17 @@ p.coding-summary {
   margin: 70px auto;
   color: var(--font-dark-color);
 }
+hr.coding-bar {
+  border: 3px solid var(--accent-plum-color);
+  border-radius: 2px;
+  margin: 40px auto;
+}
 a.shecodes-link {
   color: var(--font-dark-color);
 }
 img.coding-project-image {
   border-radius: 15px;
-  height: 200px;
+  height: 300px;
   padding: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
@@ -111,7 +116,7 @@ footer {
   max-width: 800px;
 }
 .container-coding {
-  max-width: 1000px;
+  max-width: 1100px;
   display: block;
   margin: 0 auto;
 }
