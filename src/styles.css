@@ -26,16 +26,13 @@ body.index-bg {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
-body.coding-bg,
-body.construction-bg,
-body.about-bg {
+body.subpage-bg {
   background-color: var(--background-light-color);
   display: block;
   margin: 0 auto;
   color: var(--font-dark-color);
   text-align: center;
 }
-
 h1 {
   font-family: var(--heading-font);
   text-shadow: var(--text-shadow);
@@ -43,7 +40,8 @@ h1 {
   font-weight: bold;
 }
 h1.coding-header,
-h1.about-header {
+h1.about-header,
+h1.contact-header {
   margin: 100px auto 40px;
   color: var(--accent-plum-color);
   text-shadow: none;
@@ -173,7 +171,7 @@ img.about-headshot {
   background-color: var(--accent-plum-color);
   border-radius: 10px;
 }
-.about-list {
+ul.about-list {
   list-style: square;
   text-align: left;
   font-size: 22px;
@@ -203,6 +201,25 @@ img.about-headshot {
   background-color: rgba(152, 119, 136, 0.8);
   border: 2px solid var(--accent-plum-color);
   border-radius: 8px;
+}
+ul.contact-list {
+  list-style: none;
+  text-align: center;
+  font-size: 22px;
+  font-family: var(--body-font);
+  margin: 20px auto;
+  line-height: 2;
+}
+a.contact-list-link {
+  text-decoration: none;
+  color: #1e212d;
+  font-family: var(--body-font);
+  margin: 4px auto;
+}
+.icon-contact {
+  padding: 10px;
+  margin: 20px auto;
+  color: var(--accent-plum-color);
 }
 .icon-index {
   padding: 10px;
