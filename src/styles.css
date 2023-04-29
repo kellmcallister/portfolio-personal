@@ -43,11 +43,16 @@ h1 {
   font-weight: bold;
 }
 h1.coding-header,
-h1.about-header,
+h1.about-header {
+  margin: 100px auto 40px;
+  color: var(--accent-plum-color);
+  text-shadow: none;
+}
 h1.construction-header {
   margin: 100px auto 40px;
   color: var(--accent-plum-color);
   text-shadow: none;
+  max-width: 700px;
 }
 h2 {
   font-family: var(--heading-font);
@@ -63,8 +68,9 @@ h2.workshop-title {
 h2.about-subheader {
   color: var(--accent-plum-color);
   text-shadow: none;
-  font-family: var(--body-font);
-  margin: 10px 0;
+  font-family: var(--heading-font);
+  margin: 50px 0 0;
+  text-align: left;
 }
 
 h3 {
@@ -141,7 +147,7 @@ footer {
 .grid {
   border: 2px solid var(--accent-brown-color);
   border-radius: 100px;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 40px auto;
 }
 .grid-box {
