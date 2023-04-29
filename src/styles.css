@@ -5,6 +5,7 @@
   --accent-brown-color: #b68973;
   --accent-gold-color: #fdc57b;
   --accent-plum-color: #987788;
+  --accent-darkplum-color: #826674;
   --accent-mint-color: #6d9886;
   --font-dark-color: #1e212d;
   --font-light-color: #faf3e0;
@@ -59,6 +60,13 @@ h2.workshop-title {
   text-shadow: none;
   text-decoration: underline;
 }
+h2.about-subheader {
+  color: var(--accent-plum-color);
+  text-shadow: none;
+  font-family: var(--body-font);
+  margin: 10px 0;
+}
+
 h3 {
   margin: 20px auto;
   font-family: var(--heading-font);
@@ -82,15 +90,17 @@ p.index-about {
   color: var(--font-light-color);
 }
 p.coding-summary {
-  max-width: 800px;
+  max-width: 1100px;
+  font-size: 20px;
   line-height: 1.5;
   display: block;
   margin: 70px auto;
   color: var(--font-dark-color);
 }
 hr.coding-bar {
-  border: 3px solid var(--accent-plum-color);
-  border-radius: 2px;
+  border-top: 6px solid var(--accent-plum-color);
+  opacity: 80%;
+  border-radius: 6px;
   margin: 40px auto;
 }
 a.shecodes-link {
@@ -120,6 +130,11 @@ footer {
   display: block;
   margin: 0 auto;
 }
+.container-about {
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+}
 .index-header {
   margin-top: 250px;
 }
@@ -146,6 +161,43 @@ footer {
   text-decoration: underline;
   transition: all 200ms ease-in-out;
 }
+img.about-headshot {
+  max-height: 400px;
+  padding: 0 40px;
+  background-color: var(--accent-plum-color);
+  border-radius: 10px;
+}
+.about-list {
+  list-style: square;
+  text-align: left;
+  font-size: 22px;
+  font-family: var(--body-font);
+  color: #1e212d;
+  margin: 20px 0;
+  line-height: 2;
+}
+.button-grid {
+  display: block;
+  margin: 30px 0;
+  text-align: center;
+}
+.btn-about {
+  border: 2px solid var(--accent-plum-color);
+  border-radius: 8px;
+  max-width: 200px;
+  color: var(--accent-plum-color);
+  background-color: rgba(152, 119, 136, 0.3);
+  padding: 20px;
+  margin: 20px;
+  font-family: var(--heading-font);
+  font-size: 28px;
+}
+.btn-about:hover {
+  color: var(--font-light-color);
+  background-color: rgba(152, 119, 136, 0.8);
+  border: 2px solid var(--accent-plum-color);
+  border-radius: 8px;
+}
 .icon-index {
   padding: 10px;
   margin: 30px auto;
@@ -162,5 +214,14 @@ footer {
   }
   .index-about {
     margin-top: none;
+  }
+  .about-list {
+    font-size: 16px;
+  }
+}
+@media (max-width: 950px) {
+  .about-list {
+    text-align: center;
+    list-style-position: inside;
   }
 }
