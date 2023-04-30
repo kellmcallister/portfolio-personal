@@ -104,8 +104,11 @@ p.about-paragraph {
   background-color: rgba(174, 154, 140, 0.3);
   border: 2px solid var(--accent-plum-color);
   border-radius: 20px;
+  max-width: 1000px;
   padding: 20px;
-  margin: 5px;
+  display: block;
+  margin: 5px auto;
+  font-size: 18px;
 }
 p.coding-summary {
   max-width: 1100px;
