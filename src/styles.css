@@ -179,8 +179,12 @@ footer {
 .travel-grid {
   border: 2px solid var(--accent-brown-color);
   border-radius: 100px;
-  max-width: 1200px;
-  margin: 140px auto;
+  max-width: 800px;
+  margin: 70px auto;
+}
+a em {
+  font-size: 16px;
+  margin: 0;
 }
 .grid-box {
   display: block;
