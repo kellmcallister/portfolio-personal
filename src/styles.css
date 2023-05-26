@@ -41,6 +41,7 @@ h1 {
 }
 h1.coding-header,
 h1.about-header,
+h1.travel-header,
 h1.contact-header {
   margin: 100px auto 40px;
   color: var(--accent-plum-color);
@@ -127,6 +128,11 @@ hr.coding-bar {
 a.shecodes-link {
   color: var(--font-dark-color);
 }
+a.travel-link {
+  color: var(--font-dark-color);
+  font-size: 28px;
+  text-align: center;
+}
 img.coding-project-image {
   border-radius: 15px;
   height: 300px;
@@ -156,6 +162,11 @@ footer {
   display: block;
   margin: 0 auto;
 }
+.container-travel {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
 .index-header {
   margin-top: 250px;
 }
@@ -164,6 +175,12 @@ footer {
   border-radius: 100px;
   max-width: 1000px;
   margin: 40px auto;
+}
+.travel-grid {
+  border: 2px solid var(--accent-brown-color);
+  border-radius: 100px;
+  max-width: 1200px;
+  margin: 140px auto;
 }
 .grid-box {
   display: block;
@@ -180,6 +197,13 @@ footer {
   color: var(--accent-peach-color);
   text-decoration: underline;
   transition: all 200ms ease-in-out;
+}
+.travel-link {
+  font-size: 28px;
+  font-family: var(--heading-font);
+  text-decoration: none;
+  color: var(--font-dark-color);
+  margin: 15px auto;
 }
 img.about-headshot {
   max-height: 200px;
